@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;}
+
+nav {
+  background-color: #EAFF83;
+  grid-area: nav;
+  #navigation{display:flex; 
+        justify-content: center;}
+.nav_link{width:50%; 
+        height: 50px; 
+        text-align: left; 
+        padding: 50px; 
+        font-size:1em;
+        color: black;
+        font-family: monospace;
+        }
+.nav_link:hover{background-color: black; color:#F6F2E7 ;} }
+
+header {
+    background-color:black;
+    grid-area: header;
+    padding:10px;
+    text-align: center;
+    font-size: 3.2em;}
+h2{color: #F6F2E7; font-family: cursive;}
+
+main {
+  grid-area: main; }  
+.parallax {
+  /* The image used */
+  background-image: url("BackgroundNM.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+footer {
+  background-color: black;(79, 133, 232, 0.5);
+  grid-area: footer;
+  padding:10px;
+    text-align: center;
+    font-size: 3.2em;}
+h3{color:#F6F2E7; font-family: monospace; font-size: 0.5em;
+}
+
+@media (min-width: 700px) {
+  body {
+    grid-template-rows: 1fr 1fr 1fr 100px;
+    grid-template-columns: 200px repeat(4, 1fr);
+    grid-template-areas:
+      "nav header header header header"
+      "nav main main main main"
+      "nav main main main main"
+      "nav footer footer footer footer"
+  } 
+}
+
+</style>
+</head>
+<body>
+
+<nav>    <div id="navigation">
+        <ol style="font-size: 1.5em;">
+            <div class="nav_link">Types of Flowers</div>
+
+            <div class="nav_link">Which Occasions </div>
+
+            <div class="nav_link">Flower arrangements</div>
+
+            <div class="nav_link">Flower game</div>
+</nav>
+
+<header>
+  <h2>FLOWER POWER</h2>
+  <img src="logo-flower.png" alt="logo" width="200" height="200" style="position:fixed; top:20px; right:30px">
+</header>
+
+<main>
+  <!-- Container element -->
+<div class="parallax"></div>
+</main>
+
+<footer>  
+  <h3>YOUR ULTIMATE GUIDE </h3>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Occasions Page</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;}
+  a:hover{color: #FEC7C7;}
+  a {color: black; text-decoration: none;}
+
+nav {
+  background-color: #EAFF83; min-height: 1000px;}
+
+header {
+  background-color:black;}
+
+footer {
+  background-color: black;}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 75px 1fr 1fr 100px;
+  grid-template-areas:
+    "nav nav nav nav nav"
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer"}
+
+nav {
+  grid-area: nav;
+  #navigation{display:flex; 
+        justify-content: center;}
+.nav_link{width:50%; 
+        height: 50px; 
+        text-align: left; 
+        padding: 70px; 
+        font-size:1em;
+        color: black;
+        font-family: monospace;
+        }
+.nav_link:hover{background-color: black; color:#F6F2E7; fill: #FEC7C7;width: 86%;}}
+
+header {
+  grid-area: header;
+  padding:5px;
+    text-align: center;
+    font-size: 2em;
+    height: 50%}
+h2{color: #F6F2E7; font-family: cursive;}
+h2:hover{ color: #FEC7C7;}
+
+
+main {
+  grid-area: main;
+  height: 1200px;
+}
+
+footer {
+  grid-area: footer;
+  padding:5px;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 86.1%;
+    font-size: 3.2em;}
+p{ color: #F6F2E7; font-family: monospace; font-size: 0.2em;text-decoration: none;}
+
+@media (min-width: 800px) {
+  body {
+    grid-template-rows: 1fr 1fr 1fr 100px;
+    grid-template-columns: 200px repeat(4, 1fr);
+    grid-template-areas:
+      "nav header header header header"
+      "nav main main main main"
+      "nav main main main main"
+      "nav footer footer footer footer"
+  } 
+
+h1{text-align: center; font-family: monospace; padding: 20px;}
+
+}
+</style>
+</head>
+<body>
+    </div>
+    <nav>    <div id="navigation">
+        <ol style="font-size: 1.5em;">
+          <div class="nav_link"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-200q0-100-70-170t-170-70q0 100 70 170t170 70Zm0-202q26 0 44-18t18-44v-6q8 6 16.5 9t19.5 3q26 0 44-18t18-44q0-20-9.5-35T604-576q17-6 26.5-21t9.5-35q0-26-18-44t-44-18q-11 0-19.5 3t-16.5 9v-6q0-26-18-44t-44-18q-26 0-44 18t-18 44v6q-8-6-16.5-9t-19.5-3q-26 0-44 18t-18 44q0 20 9.5 35t26.5 21q-17 6-26.5 21t-9.5 35q0 26 18 44t44 18q11 0 19.5-3t16.5-9v6q0 26 18 44t44 18Zm0-112q-26 0-44-17.5T418-576q0-26 18-44t44-18q26 0 44 18t18 44q0 27-18 44.5T480-514Zm0 314q100 0 170-70t70-170q-100 0-170 70t-70 170ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0 0v-640 640Z"/></svg>
+            <br> <a href="HOMEPAGE.html">Welcome</a></div> 
+            <div class="nav_link"> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-600q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 240q-39 0-70.5-21.5T364-438q-5 0-9 .5t-9 .5q-52 0-89-37t-37-89q0-21 7-40.5t21-36.5q-13-17-20-36.5t-7-40.5q0-52 36.5-89t88.5-37q5 0 9 .5t9 .5q14-35 45.5-56.5T480-920q39 0 70.5 21.5T596-842q5 0 9-.5t9-.5q52 0 88.5 37t36.5 89q0 21-6.5 40.5T712-640q13 17 20 36.5t7 40.5q0 52-36.5 89T614-437q-5 0-9-.5t-9-.5q-14 35-45.5 56.5T480-360Zm0 280q0-74 28.5-139.5T586-334q49-49 114.5-77.5T840-440q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm98-98q57-21 100-64t64-100q-57 21-100 64t-64 100Zm-98 98q0-74-28.5-139.5T374-334q-49-49-114.5-77.5T120-440q0 74 28.5 139.5T226-186q49 49 114.5 77.5T480-80Zm-98-98q-57-21-100-64t-64-100q57 21 100 64t64 100Zm196 0Zm-196 0Zm232-339q19 0 32.5-13.5T660-563q0-14-7.5-24.5T633-604l-35-17q-2 11-6 21.5t-9 19.5q-5 9-12 17t-15 15l32 23q5 4 11.5 6t14.5 2Zm-16-142 35-17q12-6 19-17t7-24q0-19-13-32.5T614-763q-8 0-14 2t-12 6l-33 23q8 7 15.5 15t12.5 17q5 9 9 19.5t6 21.5Zm-159-93q10-4 20-6t21-2q11 0 21 2t20 6l5-44q2-18-12.5-31T480-840q-19 0-33.5 13T434-796l5 44Zm41 312q19 0 33.5-13t12.5-31l-5-44q-10 4-20 6t-21 2q-11 0-21-2t-20-6l-5 44q-2 18 12.5 31t33.5 13ZM362-659q2-11 6-21.5t9-19.5q5-9 12-17t15-15l-32-23q-5-4-11.5-6t-14.5-2q-19 0-32.5 13.5T300-717q0 13 7.5 24t19.5 17l35 17Zm-16 141q8 0 14-1.5t12-6.5l33-22q-8-7-15.5-15T377-580q-5-9-9-19.5t-6-21.5l-35 17q-12 6-19 17t-7 24q1 19 13.5 32t31.5 13Zm237-62Zm0-120Zm-103-60Zm0 240ZM377-700Zm0 120Z" alt="flower"/></svg>
+             <br> <a href="FLOWER-TYPES.HTML">Types</a></div> 
+
+            <div class="nav_link"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M482-80q-57 0-101-36t-55-92q-53 17-107-2t-83-66q-30-48-22-106.5t52-97.5q-42-38-50.5-94T134-678q27-48 81.5-69.5T324-752q11-56 55-92t101-36q57 0 101 36t55 92q56-17 108.5 3t81.5 71q27 50 19.5 104.5T794-480q44 39 52.5 96.5T828-276q-29 51-81.5 68T638-208q-11 56-55 92T482-80Zm0-80q47 0 70.5-40.5T552-280l-28-46q-11 3-21 4.5t-21 1.5q-10 0-20.5-1.5T440-326l-28 46q-24 39-.5 79.5T482-160ZM202-320q24 41 70.5 41t69.5-41l26-46q-8-8-15-17t-12-19q-5-9-9-18.5t-7-19.5h-53q-47 0-70 39.5t0 80.5Zm416 0q23 41 69.5 41t70.5-41q23-41 0-80.5T688-440h-53q-2 10-6.5 19.5T619-402q-5 10-12 19t-15 17l26 46ZM480-480Zm-155-40q3-11 7.5-21.5T342-561q5-9 11.5-17t14.5-16l-26-46q-23-41-69.5-41T202-640q-23 41 0 80.5t70 39.5h53Zm363 0q47 0 70-39.5t0-80.5q-24-41-70.5-41T618-640l-26 46q8 8 14.5 16t11.5 17q5 9 9.5 19.5T635-520h53ZM437-634q11-3 21.5-4.5T480-640q11 0 21.5 1.5T523-634l27-46q23-39 0-79.5T480-800q-47 0-70 40t0 80l27 46Zm0 0q11-3 21.5-4.5T480-640q11 0 21.5 1.5T523-634q-11-3-21.5-4.5T480-640q-11 0-21.5 1.5T437-634Zm-96 232q-5-9-9-18.5t-7-19.5q3 10 7 19.5t9 18.5q5 10 12 19t15 17q-8-8-15-17t-12-19Zm-16-118q3-11 7.5-21.5T342-561q5-9 11.5-17t14.5-16q-8 8-14.5 16T342-561q-5 9-9.5 19.5T325-520Zm157 200q-10 0-20.5-1.5T440-326q11 3 21.5 4.5T482-320q11 0 21-1.5t21-4.5q-11 3-21 4.5t-21 1.5Zm110-46q8-8 15-17t12-19q5-9 9.5-18.5T635-440q-2 10-6.5 19.5T619-402q-5 10-12 19t-15 17Zm43-154q-3-11-7.5-21.5T618-561q-5-9-11.5-17T592-594q8 8 14.5 16t11.5 17q5 9 9.5 19.5T635-520ZM480-400q33 0 56.5-23.5T560-480q0-33-23.5-56.5T480-560q-33 0-56.5 23.5T400-480q0 33 23.5 56.5T480-400Z" alt="flower"/></svg>
+              <br> <a href="OCCASIONS.HTML">Occasions </a> </div>
+
+            <div class="nav_link"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z" alt="flower"/></svg>
+              <br> <a href="ARRANGEMENTS.HTML">Arrangements</a></div>
+
+            <div class="nav_link"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m720-600-32 28q-14 13-33 13t-33-11q-14-11-19-28t1-36l16-50-34-20q-16-9-22.5-26t-1.5-34q5-17 20-26.5t34-9.5h40l12-38q6-19 20.5-30.5T720-880q17 0 31.5 11.5T772-838l12 38h40q19 0 33.5 9.5T878-764q7 18 0 35t-22 25l-36 20 16 50q6 19 1 36.5T818-570q-15 11-33.5 11T752-572l-32-28Zm0-80q17 0 28.5-11.5T760-720q0-17-11.5-28.5T720-760q-17 0-28.5 11.5T680-720q0 17 11.5 28.5T720-680ZM552-244q23 60-15 112T430-80q-33 0-62.5-17T324-142q-83 12-137.5-42.5T142-324q-30-17-46-46.5T80-438q0-61 55.5-98.5T244-552l62 26q20-31 53-50.5t71-21.5v-82h60v90q37 11 61 34.5t41 65.5h88v60h-82q-2 38-20.5 71T528-306l24 62Zm-248 24q0-27 4.5-52.5T322-322q-23 11-49.5 15.5T220-304q0 39 22.5 61.5T304-220Zm-74-164q32 0 56.5-8t63.5-32l-120-50q-29-12-49.5.5T160-434q0 26 17 38t53 12Zm200 224q25 0 40.5-17.5T478-214l-54-136q-19 32-29.5 64T384-228q0 33 11.5 50.5T430-160Zm66-222q10-10 16-26.5t6-34.5q0-32-21-54t-52-22q-18 0-34 6t-27 17l78 36 34 78Zm-174 60Z" alt="flower"/></svg>
+              <br> <a href="GAME-FLOWER.html">Game</a> </div>         
+    </nav>
+<header>
+  <h2>Have Fun!</h2>
+  <img src="logo-flower.png" alt="logo" width="200" height="200" style="position:fixed; top:20px; right:30px">
+</header>
+<main>
+
+  <h1>TEST YOUR MEMORY WITH FLOWERS!</h1>
+  <section class="memory-game">
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="tulips.jpg" width="200px" height="200px" alt="TULIPS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO BADGE" />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="tulips.jpg" width="200px" height="200px" alt="TULIPS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="roses.jpg" width="200px" height="200px" alt=ROSES" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="roses.jpg" width="200px" height="200px" alt="ROSES" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="sunflowers.jpg" width="200px" height="200px" alt="SUNFLOWERS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="sunflowers.jpg" width="200px" height="200px" alt="SUNFLOWERS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="daisies.jpg" width="200px" height="200px" alt="DAISIES" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="daisies.jpg" width="200px" height="200px" alt="DAISIES" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="lilies.jpg" width="200px" height="200px" alt="LILIES" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="lilies.jpg" width="200px" height="200px" alt="LILIES" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="orchids.jpg" width="200px" height="200px" alt="ORCHIDS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="orchids.jpg" width="200px" height="200px" alt="ORDCHIDS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="HYDRANGEAS.jpg" width="200px" height="200px" alt="HYDRANGEAS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="HYDRANGEAS.jpg" width="200px" height="200px" alt="HYDRANGEAS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="carnation.jpg" width="200px" height="200px" alt="CARNATIONS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="carnation.jpg" width="200px" height="200px" alt="CARNATIONS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="CHRYSANTHEMUMS.jpg" width="200px" height="200px" alt="CHRYSANTHEMUMS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="CHRYSANTHEMUMS.jpg" width="200px" height="200px" alt="CHRYSANTHEMUMS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="DAFFODILS.jpg" width="200px" height="200px" alt="DAFFODILS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="DAFFODILS.jpg" width="200px" height="200px" alt="DAFFODILS" />
+      <img class="back-face" src="logo-flower.png" width="200px" height="200px" alt="LOGO Badge" />
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</main>
+<footer>  
+
+  <p>© FLOWER POWER, 2023  |  All rights reserved.</p>
+</footer>
+</body>
+</html>
